@@ -36,6 +36,9 @@ fileManagerBtn.addEventListener('click', function (event) {
                 let line = document.createTextNode(lines[i] + '\n');
                 editor.appendChild(line);
             }
+
+            $('.result').html($('#code-editor').text());
+            hljs.highlightBlock($('.result')[0],'  ', false);
         });
     });
 });
