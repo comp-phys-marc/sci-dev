@@ -9,7 +9,7 @@
   </head>
   <body>
   <nav id="top-bar" class="navbar navbar-toggleable-md navbar-light bg-faded">
-    <a class="navbar-brand inline" id="logo-name" href="#">SciDev<p class="inline little">     the SciAPI IDE</p></a>
+    <a class="navbar-brand inline" id="logo-name" href="#">SciDev<p class="inline little"> the SciAPI IDE</p></a>
   </nav>
   <div class="row">
     <div class="col-md-3 col-sm-3 col-xs-12 col-lg-3 text-center">
@@ -21,7 +21,7 @@
         </span>
         </div>
       </div>
-      <div class="row">
+      <div class="row" id="widget-container">
         <div id="loading-div" style="display:none;">
           <p class="space">Querying SciAPI...</p>
           <div class="container container1 space">
@@ -35,24 +35,29 @@
       </div>
     </div>
     <div class="col-md-5 col-sm-5 col-xs-12 col-lg-5">
-      <div class="btn-group space" role="group">
-        <button class="btn btn-secondary" id="open-file-manager">Open</button>
-        <button class="btn btn-secondary" id="save-file">Save</button>
-        <button class="btn btn-warning" id="run-code">Run >></button>
+      <div class="row">
+        <div class="btn-group space" role="group">
+          <button class="btn btn-secondary" id="open-file-manager">Open</button>
+          <button class="btn btn-secondary" id="save-file">Save</button>
+          <button class="btn btn-secondary" id="save-as-file">Save As</button>
+          <button class="btn btn-warning" id="run-code">Run >></button>
+        </div>
+        <div class="btn-group space" role="group">
+          <button class="btn btn-secondary" id="save-output">Save Output</button>
+          <button class="btn btn-danger" id="clear-output">Clear Output</button>
+        </div>
       </div>
-      <pre id="code-editor" class="code-editable editor" contenteditable="true">
+      <div class="row">
+        <pre id="code-editor" class="code-editable editor" contenteditable="true">
 // Open a file or start typing your JS here!
 // Run your code and see the results.
 // Save your code on your computer to use again later.
-      </pre>
-      <pre style="display:none;" class="code-editable result"></pre>
-    </div>
-    <div class="col-md-4 col-sm-4 col-xs-12 col-lg-4">
-      <div class="btn-group space" role="group">
-        <button class="btn btn-secondary" id="save-output">Save Output</button>
-        <button class="btn btn-danger" id="clear-output">Clear</button>
+        </pre>
+        <pre style="display:none;" class="code-editable result"></pre>
       </div>
-      <pre id="code-debugger" class="code-editable"></pre>
+      <div class="row">
+        <pre id="code-debugger" class="code-editable"></pre>
+      </div>
     </div>
   </div>
     <script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>

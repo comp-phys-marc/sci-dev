@@ -5,6 +5,7 @@ const fs = require('fs');
 const fileManagerBtn = document.getElementById('open-file-manager');
 const debuggerSaveBtn = document.getElementById('save-output');
 const codeSaveBtn = document.getElementById('save-file');
+const codeSaveAsBtn = document.getElementById('save-as-file');
 const editor = document.getElementById('code-editor');
 const codeDebugger =  document.getElementById('code-debugger');
 
@@ -97,4 +98,27 @@ codeSaveBtn.addEventListener('click', function (event) {
     });
     });
     }
+});
+
+codeSaveAsBtn.addEventListener('click', function (event) {
+
+    let content = editor.innerHTML;
+
+
+    dialog.showSaveDialog((fileName) => {
+        if (fileName === undefined)
+    {
+        alert("Couldn't save the file");
+        return;
+    }
+
+    // fileName is a string that contains the path and filename created in the save file dialog.
+    fs.writeFile(fileName, content, (err) => {
+        if(err){
+            alert("An error ocurred creating the file " + err.message)
+        }
+
+        alert("The file has been succesfully saved");
+    });
+    });
 });

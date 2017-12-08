@@ -13,7 +13,9 @@ html, body{
     -moz-box-shadow: inset 0 0 10px #000;
     box-shadow: inset 0 0 10px #000;
     margin: 20px;
-    height: 500px;
+    width: 70vw;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 .container{
@@ -115,7 +117,8 @@ body{
 }
 
 #sciapi-container{
-    min-height: 250px;
+    height: 83vh;
+    overflow-y: scroll;
 }
 
 .space{
@@ -161,6 +164,7 @@ body{
     text-shadow: 0px 0px 0px transparent; /* change [input font] by this*/
     -webkit-text-fill-color: transparent;
     padding: 20px !important;
+    height: 55vh;
 }
 
 .editor * {
@@ -172,4 +176,17 @@ body{
     border: solid 1px #333;
     z-index: -1;
     padding: 20px !important;
+    height: 55vh;
+}
+
+#code-debugger{
+    height: 15vh;
+}
+
+#widget-container{
+    overflow-y: scroll;
+}
+
+.thumbnail{
+    overflow-x: scroll;
 }
