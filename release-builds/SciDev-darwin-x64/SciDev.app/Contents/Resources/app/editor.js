@@ -14,6 +14,13 @@ $(document).ready(function() {
         left: ($('#code-editor').position().left)+ "px",
         width: $('.editor').width() + 40
     }).show();
+    (function() {
+        var target = $(".result");
+        $(".editor").scroll(function() {
+            target.prop("scrollTop", this.scrollTop)
+                .prop("scrollLeft", this.scrollLeft);
+        });
+    })();
 });
 $(window).resize(function(){
     $('.result').css({
