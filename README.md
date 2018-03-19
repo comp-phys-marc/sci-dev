@@ -11,7 +11,7 @@ git clone https://gitlab.com/SIGMADev/scidev.git
 
 Run the following in the project directory:
 ```
-nom install electron-packager -g
+npm install electron-packager -g
 electron-packager . SciDev --overwrite --platform=darwin --arch=x64 --icon=assets/icons/mac/scidev.icns --prune=true --out=release-builds
 ```
 

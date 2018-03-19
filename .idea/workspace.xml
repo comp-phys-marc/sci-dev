@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d857f5e3-5eeb-41a6-a410-08a7fbf22c35" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sciapilib.js" afterPath="$PROJECT_DIR$/sciapilib.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <ignored path="electron-quick-start.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -50,12 +48,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="105">
-                <caret line="7" column="48" selection-start-line="7" selection-start-column="48" selection-end-line="7" selection-end-column="48" />
+              <first_editor relative-caret-position="95">
+                <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -95,7 +93,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sciapilib.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="sciapilib.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sciapilib.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="248">
@@ -157,10 +155,10 @@
         <option value="$PROJECT_DIR$/main.js" />
         <option value="$PROJECT_DIR$/file.js" />
         <option value="$PROJECT_DIR$/editor.js" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/main.css" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/sciapilib.js" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -318,12 +316,12 @@
       <workItem from="1512764558955" duration="1963000" />
       <workItem from="1512792240579" duration="391000" />
       <workItem from="1512834787351" duration="167000" />
-      <workItem from="1521467807662" duration="487000" />
+      <workItem from="1521467807662" duration="550000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23733000" />
+    <option name="totallyTimeSpent" value="23796000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1366" height="745" extended-state="6" />
@@ -755,17 +753,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="105">
-            <caret line="7" column="48" selection-start-line="7" selection-start-column="48" selection-end-line="7" selection-end-column="48" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/editor.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -818,6 +805,17 @@
         <state relative-caret-position="248">
           <caret line="102" column="49" selection-start-line="102" selection-start-column="49" selection-end-line="102" selection-end-column="49" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="95">
+            <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
+            <folding />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
