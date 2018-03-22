@@ -9,6 +9,11 @@ var QEDOperations = {
     3: "H"
 };
 
+var DS1Operations = {
+    0: "Encode",
+    1: "Decode"
+};
+
 window.firebase ||  document.write('<script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"><\/script>');
 
 var mathjs = document.createElement('script');          // Imports math.js
@@ -85,5 +90,25 @@ $(document).ready(function(){
                 });
             });
         });
-    }
+    };
+    sciapi["DS1Transmission"] = function(operationID, deviceID, data, callback) {
+        console.log("Calling on DS-1");
+        var updates = {};
+        var operationObject = {};
+        operationObject[DS1Operations[operationID]] = [data];
+        updates['/devices/' + deviceID] = operationObject;
+        firebase.database().ref().update(updates).then(function(){
+            firebase.database().ref().child('devices/' + deviceID).on("value", function (snapshot) {
+                console.log(snapshot.val());
+                Object.keys(snapshot.val()).map(function (snapKey, index) {
+                    if (snapshot.val()[snapKey].hasOwnProperty('result')) {
+
+                        var result = snapshot.val()[snapKey]['result'];
+                        alert('Computed result of' + DS1Operations[operationID] + '(' + data.toString() + '): ' + result.toString());
+                        callback(result);
+                    }
+                });
+            });
+        });
+    };
 });
